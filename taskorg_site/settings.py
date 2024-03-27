@@ -1,3 +1,4 @@
+import os
 """
 Django settings for taskorg_site project.
 
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'taskorg_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, 'templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'tasks/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
