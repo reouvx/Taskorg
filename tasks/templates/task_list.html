@@ -1,10 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="{% static 'styling.css' %}">
 <head>
-    <title>Task List</title>
+    <h1>
+        <div class="two alt-two">
+        <h1>Tasks list
+            <span>my tasks</span>
+          </h1>
+        </div>
+    </h1>
 </head>
 <body>
-    <h1>Task List</h1>
     <ul>
         {% for task in tasks %}
         <li>

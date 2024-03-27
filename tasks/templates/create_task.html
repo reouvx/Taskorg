@@ -1,14 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="{% static 'styling.css' %}">
 <head>
-    <title>Create Task</title>
+    <div class="two alt-two">
+        <h1>Create Task
+            <span>creating a new task</span>
+          </h1>
+    </div>
 </head>
 <body>
-    <h1>Create Task</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Create</button>
+        <button class="button-28" role="button">CREATE</button>
     </form>
 </body>
 </html>
