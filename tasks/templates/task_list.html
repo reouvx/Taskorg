@@ -6,7 +6,7 @@
     <h1>
         <div class="two alt-two">
         <h1>Tasks list
-            <span>my tasks</span>
+            <span>My tasks</span>
           </h1>
         </div>
     </h1>
@@ -20,7 +20,7 @@
             <a href="{% url 'delete_task' task.id %}">Delete</a>
         </li>
     {% empty %}
-        <li>No tasks found.</li>
+        <li>No Tasks Found.</li>
     {% endfor %}
 </ul>
 <a href="{% url 'create_task' %}">Create Task</a>
